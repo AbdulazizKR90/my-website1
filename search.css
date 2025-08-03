@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  direction: rtl;
+  background: linear-gradient(135deg, #c8dfcc, #a1cca8);
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* الهيدر */
+header {
+  background: #6d9673;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+      text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* المحتوى */
+main {
+  flex: 1;
+  padding: 30px 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* نموذج البحث */
+form {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+form input[type="text"] {
+  flex: 1;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1em;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+form input[type="text"]:focus {
+  border-color: #2980b9;
+}
+
+form button {
+  padding: 12px 20px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #3498db;
+}
+
+/* نتائج البحث */
+section h2 {
+  margin-bottom: 15px;
+  color: #000000;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  color:#6d9673;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+ul li a:hover {
+  color: #e67e22;
+}
+
+/* الفوتر */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255,255,255,0.1);
+  color: #fff;
+  font-size: 0.9em;
+  margin-top: auto;
+}
+
+/* تجاوب للموبايل */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  form button {
+    width: 100%;
+  }
+}

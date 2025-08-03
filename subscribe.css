@@ -1,0 +1,111 @@
+/* إعدادات عامة */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+header {
+    background: #6d9673; /* لون أخضر */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+main {
+    padding: 20px;
+}
+
+
+.subscription-section {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 40px 40px 40px rgba(0, 0, 0, 0.281);
+    max-width: 400px; 
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"] {
+    width: 100%; /* عرض كامل */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* احتساب الهوامش ضمن العرض */
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="password"]:focus {
+    border-color:  #6d9673; /* تمييز عند التركيز */
+    outline: none; /* إزالة الإطار الافتراضي */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #437945; /* لون أخضر */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* ملء العرض */
+}
+
+button:hover {
+    background-color:  #6d9673; /* لون أغمق عند التحويم */
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background:  #6d9673;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 200px;
+}

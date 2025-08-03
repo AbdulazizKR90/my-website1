@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Almarai', sans-serif;
+  direction: rtl;
+  background: linear-gradient(135deg, #6d9673, #6d9673);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  padding: 20px 40px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    
+}
+
+nav a:hover {
+      text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+main {
+  flex: 1;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 10px;
+}
+
+img {
+  border-radius: 90px;
+  max-width: 30%;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+form label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+  color: #ffd700;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  outline: none;
+}
+
+form input::placeholder {
+  color: #ddd;
+}
+
+form button {
+  width: 100%;
+  background: #ffd700;
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #1e3c72;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #fff8b0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255,255,255,0.05);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  color: #ccc;
+  font-size: 0.9em;
+}
